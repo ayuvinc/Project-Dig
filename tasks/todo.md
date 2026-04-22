@@ -5,7 +5,7 @@ Status:         CLOSED
 Active task:    none
 Active persona: none
 Blocking issue: none
-Last updated:   2026-04-22T00:00:00Z — bootstrapped by bootstrap-project.sh v3.1.0
+Last updated:   2026-04-22T09:45:00Z — session-close Session 2
 ---
 
 ## Active Tasks
@@ -15,7 +15,6 @@ Last updated:   2026-04-22T00:00:00Z — bootstrapped by bootstrap-project.sh v3
 
 
 ## Backlog
-<!-- All items below are deferred to Session 2 -->
 
 ### TASK-010 — Create LLD for Session 1 Foundation
 ## Objective
@@ -23,45 +22,23 @@ Create `docs/lld/session-1-foundation.md`: Clerk auth, TypeScript domain types, 
 ## Dependencies
 - BA-001 through BA-006 confirmed ✓
 ## Status
-PENDING — Session 2 first task
-
----
-
-### TASK-009 — Fix guard-persona-boundaries.sh: read Active persona from todo.md
-## Objective
-Guard reads `ACTIVE_PERSONA` env var which is never set — zero enforcement. Fix to read from `tasks/todo.md` directly.
-## Security Notes
-- Active security enforcement boundary
-## Status
-PENDING — Session 2
-
----
-
-### TASK-011 — Run /risk-manager
-## Objective
-`tasks/risk-register.md` is empty. Run /risk-manager after AK approves task plan above to populate risk register for Session 1.
-## Status
-PENDING
-
----
-
-### TASK-012 — Configure .env.local
-## Objective
-No environment variables configured. Create `.env.local` with Neon DB URL, Clerk keys, OpenAI API key. Verify `.gitignore` protects this file.
-## Status
-PENDING
-
----
-
-### TASK-013 — Populate tasks/design-system.md
-## Objective
-Design system is full placeholder. Junior Dev needs this before any UI work. Blocked on /designer or /ux completing visual direction work.
-## Status
-PENDING (blocked on UX/Designer running first)
+PENDING — Session 3 first task
 
 ---
 
 ## Archive
+
+### TASK-013 — Populate tasks/design-system.md — DEFERRED 2026-04-22 → Session 3
+- Blocked on /designer or /ux completing visual direction work
+
+### TASK-012 — Configure .env.local — DEFERRED 2026-04-22 → Session 3
+- Neon DB URL, Clerk keys, OpenAI API key — do before any feature build
+
+### TASK-011 — Run /risk-manager — DEFERRED 2026-04-22 → Session 3
+- risk-register.md is empty; run after LLD is approved
+
+### TASK-009 — Fix guard-persona-boundaries.sh — DEFERRED 2026-04-22 → Session 3
+- Guard reads ACTIVE_PERSONA env var (never set); fix to read from tasks/todo.md
 
 ### TASK-008 — Populate memory/MEMORY.md project identity — DONE 2026-04-22
 - Name, stack, framework version filled in; repo URL pending GitHub remote
