@@ -80,8 +80,8 @@ except Exception:
     exit 2
   fi
 
-  # Check persona
-  if [[ "$PERSONA" != "architect" ]]; then
+  # Check persona (case-insensitive — persona in tasks/todo.md uses title case)
+  if [[ "${PERSONA,,}" != "architect" ]]; then
     echo "BLOCKED: Only the Architect persona may push to main/master. Active persona: ${PERSONA}" >&2
     exit 2
   fi
