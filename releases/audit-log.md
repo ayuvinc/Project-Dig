@@ -133,3 +133,5 @@ warnings:
   - ".mcp.json has two issues: python3 not full path (see prior Session 2 fix), AUDIT_LOG_PATH=tasks/audit-log.md should be releases/audit-log.md"
   - "Session 3 was a test-only session opened and closed immediately — no implementation work done"
 notes:           "TASK-010 remains PENDING. Next: Session 4, Architect writes docs/lld/session-1-foundation.md. .mcp.json committed for reference but needs fixes before MCP servers will work."
+| 2026-04-22T00:00:00Z | session-open | COMPLETE | session-open-4-1-20260422T000000Z | Session 4 opened — MCP test only, no task work planned. SESSION STATE CLOSED→OPEN. Active persona: Architect. |
+| 2026-04-22T03:47:35Z | session-close | COMPLETE | session-close-4-1-20260422T034735Z | Session 4 closed — MCP test only. All 4 MCP tools confirmed working. SESSION STATE OPEN→CLOSED. |

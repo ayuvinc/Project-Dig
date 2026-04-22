@@ -31,7 +31,7 @@ If AK has not answered the 2 open questions, Architect proceeds with BA's sugges
 
 ACTIVE_BRANCH: main (no feature branch yet — Session 1 foundation branch created when LLD is approved)
 FILES_MODIFIED: tasks/todo.md, tasks/ba-logic.md, tasks/next-action.md, .claude/settings.json, memory/MEMORY.md
-DECISIONS_MADE: GitHub repo created (https://github.com/ayuvinc/Project-Dig) | MCP servers fixed (full python3 path) | git identity configured | TASK-009/011/012/013 deferred | BA-007 moved to Future/Unconfirmed | Session 3 was a test-only session (MCP server test — did not work; .mcp.json has known issues: python3 path not full path, AUDIT_LOG_PATH points to wrong location)
-OPEN_QUESTIONS: 2 BA open questions above | BA-007 AI Submission Layer (Session 4+) | .mcp.json needs fix: use full python3 path, set AUDIT_LOG_PATH=releases/audit-log.md
+DECISIONS_MADE: GitHub repo created (https://github.com/ayuvinc/Project-Dig) | MCP servers fixed (full python3 path) | git identity configured | TASK-009/011/012/013 deferred | BA-007 moved to Future/Unconfirmed | Session 3 was a test-only session (MCP server test — did not work) | Session 4 MCP test PASSED: all 4 MCP tools confirmed working (audit-log append, state-machine get/set/transition) — .mcp.json fix from commit 05e0253 fully resolved Session 3 failures
+OPEN_QUESTIONS: 2 BA open questions above | BA-007 AI Submission Layer (Session 4+)
 TEST_RESULTS: npm run build ✓ | npm run lint ✓ | npm run test --passWithNoTests ✓ (as of Session 1)
 NEXT_PERSONA: Architect
