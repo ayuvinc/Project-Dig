@@ -149,5 +149,6 @@
         "AUDIT_LOG_PATH": "releases/audit-log.md"
       }
     }
-  }
+  },
+  "enableAllProjectMcpServers": true
 }
