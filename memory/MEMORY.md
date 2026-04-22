@@ -6,10 +6,10 @@
 
 ## Project Identity
 
-- **Name:** [PROJECT_NAME]
-- **Stack:** [STACK]
-- **Repo:** [REPO_URL]
-- **Framework version:** [AK_COGOS_VERSION]
+- **Name:** Project-Dig
+- **Stack:** Next.js 16 (App Router), TypeScript (strict), Neon (PostgreSQL + pgvector), Clerk, OpenAI Embeddings (text-embedding-3-small), Tailwind CSS v4, Vercel
+- **Repo:** local only — no GitHub remote yet (add after creating remote)
+- **Framework version:** AK-CogOS 3.0.0
 
 ---
 

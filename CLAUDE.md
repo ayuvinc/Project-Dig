@@ -91,7 +91,15 @@ The following hooks are configured in `.claude/settings.json` and run automatica
 | `guard-git-push.sh` | Blocks git push to main unless Architect with QA_APPROVED |
 | `guard-planning-artifacts.sh` | Blocks Junior Dev from writing source code when planning docs missing (Standard + High-Risk tiers only; MVP exempt) |
 
-**PostToolCall hooks** (run after tool calls):
+**PostToolCall hooks** (run after Write/Edit):
+
+| Hook | Enforces |
+|---|---|
+| `set-teach-me-flag.sh` | Flags modified files for /teach-me auto-trigger |
+| `set-codex-prep-flag.sh` | Flags modified files for /codex-prep auto-trigger |
+| `set-codex-read-flag.sh` | Flags modified files for /codex-read auto-trigger |
+
+**PostToolCall hooks** (run after Bash):
 
 | Hook | Enforces |
 |---|---|
@@ -103,6 +111,10 @@ The following hooks are configured in `.claude/settings.json` and run automatica
 | Hook | Enforces |
 |---|---|
 | `auto-persona-detect.sh` | Reads next-action.md and hints which persona to activate |
+| `guard-boundary-flags.sh` | Blocks prompts when open BOUNDARY_FLAGs exist |
+| `auto-teach.sh` | Auto-triggers /teach-me on flagged files |
+| `auto-codex-prep.sh` | Auto-triggers /codex-prep on flagged files |
+| `auto-codex-read.sh` | Auto-triggers /codex-read on flagged files |
 
 **Stop hooks** (run when session ends):
 

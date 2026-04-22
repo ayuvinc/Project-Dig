@@ -146,7 +146,7 @@
       ],
       "env": {
         "PROJECT_ROOT": "/Users/akaushal011/Project-Dig",
-        "AUDIT_LOG_PATH": "tasks/audit-log.md"
+        "AUDIT_LOG_PATH": "releases/audit-log.md"
       }
     }
   }
