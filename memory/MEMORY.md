@@ -65,6 +65,7 @@
 <!-- Architect clears and rewrites this section at each session close -->
 
 - [feedback_discovery_interview.md](feedback_discovery_interview.md) — BA must ask one question at a time with options + recommendation
+- [feedback_git_and_deployment.md](feedback_git_and_deployment.md) — Claude owns all git actions; deployment platform TBD (not Vercel by default)
 
 ---
 
