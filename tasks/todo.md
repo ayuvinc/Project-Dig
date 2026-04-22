@@ -11,59 +11,32 @@ Last updated:   2026-04-22
 
 ## Active Tasks
 
+<!-- empty — all tasks archived or deferred to Session 2 -->
 
 
 
-
-
-### TASK-009 — Fix guard-persona-boundaries.sh: read Active persona from todo.md
-## Objective
-`guard-persona-boundaries.sh` reads `ACTIVE_PERSONA` env var, which is never set. The guard has zero enforcement. Fix: read `Active persona` field directly from `tasks/todo.md` at hook invocation time.
-## Scope
-- Modify `guard-persona-boundaries.sh` to parse `Active persona:` from `tasks/todo.md` when `ACTIVE_PERSONA` env var is not set
-- Test: with `Active persona: junior-dev`, confirm writes to `tasks/todo.md` are blocked
-- Test: with `Active persona: none`, confirm guard is inactive (no persona = no enforcement, framework-level work)
-## Acceptance Criteria
-- Junior Dev persona correctly blocked from writing `tasks/todo.md`, `types/`, `lib/`, `middleware/`, `releases/`
-- QA persona correctly blocked from writing source code
-- BA persona correctly restricted to `tasks/ba-logic.md`, `docs/`, `channel.md`
-- Guard passes for Architect (no restrictions)
-## Security Notes
-- This is an active security enforcement boundary — must be reliable and tested
-## Dependencies
-- None
-## Status
-PENDING
-
----
+## Backlog
+<!-- All items below are deferred to Session 2 -->
 
 ### TASK-010 — Create LLD for Session 1 Foundation
 ## Objective
-`docs/lld/` has no feature LLD files. CLAUDE.md requires LLD before Junior Dev can implement. Session 1 Foundation (auth, types, CI/CD) has no design document.
-## Scope
-Create `docs/lld/session-1-foundation.md`:
-- Auth setup: Clerk middleware, protected /dashboard routes, public routes
-- Type definitions: Submission, Embedding, Insight, Rating (in types/)
-- Database schema: Neon PostgreSQL tables with pgvector column
-- CI/CD: Vercel deployment, GitHub Actions lint+test gate
-- Folder structure and naming conventions
-## Acceptance Criteria
-- LLD covers all Session 1 scope items from scope-brief.md
-- Security checklist completed for each section
-- Junior Dev can implement without needing to ask design questions
-## Security Notes
-- Auth model: unauthenticated users blocked on /dashboard, Clerk session validation enforced
-- No client-side DB access — all queries via server actions
-- OpenAI key never exposed to client
+Create `docs/lld/session-1-foundation.md`: Clerk auth, TypeScript domain types, Neon schema, CI/CD pipeline. Required before Junior Dev can implement.
 ## Dependencies
-- TASK-006 (BA scope confirmed)
-- TASK-007 (BA logic decisions available)
+- BA-001 through BA-006 confirmed ✓
 ## Status
-PENDING
+PENDING — Session 2 first task
 
 ---
 
-## Backlog
+### TASK-009 — Fix guard-persona-boundaries.sh: read Active persona from todo.md
+## Objective
+Guard reads `ACTIVE_PERSONA` env var which is never set — zero enforcement. Fix to read from `tasks/todo.md` directly.
+## Security Notes
+- Active security enforcement boundary
+## Status
+PENDING — Session 2
+
+---
 
 ### TASK-011 — Run /risk-manager
 ## Objective
