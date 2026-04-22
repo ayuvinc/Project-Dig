@@ -182,3 +182,34 @@ Cleared at end of sprint after tasks are archived.
 **Out of scope:** Any UI beyond Next.js default scaffold and Clerk sign-in/sign-up pages, AI embedding generation (Session 2+), insight generation (Session 2+), search UI (Session 2+)
 
 **Open questions for AK:** None — confirmed.
+
+---
+
+### BA-007 — AI Submission Layer (Future — Unconfirmed)
+- Status: UNCONFIRMED — AK decision required before BA work begins
+- Scope: Whether AI agents can submit knowledge to the platform alongside human users
+- confirmed_by: pending
+- date captured: 2026-04-22
+- full reasoning: docs/decision-log.md → INSIGHT-001
+
+**The proposal in one sentence:** Allow AI agents to submit structured knowledge into the platform continuously, seeding the knowledge base before human contributors arrive and creating a two-tier pool (AI breadth + human signal).
+
+**Business rules to resolve before design:**
+  - Submission type field must be extended: `type: link | text | ai-generated`
+  - AI submissions must be labelled — source transparency is mandatory, not optional
+  - Users must be able to filter search results by source (human only | ai only | both)
+  - AI submissions must pass through the same embedding pipeline as human submissions
+  - Rating system applies equally to AI and human-sourced insights — rating is the quality gate
+  - A flag/review mechanism must exist before AI submissions go live (currently out of scope)
+
+**Why this matters for the data model:**
+  - `Submission.type` enum needs a third value: `ai-generated`
+  - `Submission.authorId` — for AI submissions this would be a system agent ID, not a Clerk user ID; schema must accommodate non-human authors
+  - `Insight.sourceSubmissionIds` already handles mixed-source clusters — no change needed
+
+**Proposed session:** Session 4+ — only after human submit/discover/rate loop is live and rating signal is validated. Do not design or build this before Session 3 is complete.
+
+**Open questions for AK:**
+  1. Confirmed: should AI submissions be a feature at all? (decision-log INSIGHT-001)
+  2. Should AI-sourced insights be ranked separately from human-sourced insights by default, or unified with a source filter?
+  3. Who controls the AI agents — AK as operator, or third-party integrators via an API?
