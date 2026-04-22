@@ -2,7 +2,7 @@
   "mcpServers": {
     "ak-state-machine": {
       "type": "stdio",
-      "command": "python3",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
       "args": [
         "/Users/akaushal011/Project-Dig/mcp-servers/state_machine_server.py"
       ],
@@ -12,13 +12,13 @@
     },
     "ak-audit-log": {
       "type": "stdio",
-      "command": "python3",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
       "args": [
         "/Users/akaushal011/Project-Dig/mcp-servers/audit_log_server.py"
       ],
       "env": {
         "PROJECT_ROOT": "/Users/akaushal011/Project-Dig",
-        "AUDIT_LOG_PATH": "tasks/audit-log.md"
+        "AUDIT_LOG_PATH": "releases/audit-log.md"
       }
     }
   }
