@@ -14,8 +14,8 @@ The Architect and skill agents own the write gate.
 session:        none
 sprint:         none
 active_persona: none
-last_skill_run: none
-last_updated:   —
+last_skill_run: session-close
+last_updated:   2026-04-22T00:00:00Z
 ```
 
 ---
@@ -23,10 +23,10 @@ last_updated:   —
 ## Last Handoff
 
 ```yaml
-from:    —
-to:      —
-status:  —
-message: —
+from:    session-close
+to:      Architect
+status:  PASS
+message: "Session 3 closed (test only — MCP server test, no tasks completed). Next: Session 4, Architect writes docs/lld/session-1-foundation.md (TASK-010)."
 ```
 
 ---

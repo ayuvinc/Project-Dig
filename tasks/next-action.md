@@ -12,7 +12,7 @@ Architect
 
 - tasks/ba-logic.md (confirmed — BA-001 through BA-006 available)
 - docs/scope-brief.md (confirmed — Session 1 must-haves defined)
-- AK answers to 2 open questions before Session 3 design is finalised:
+- AK answers to 2 open questions before Session 4 design is finalised:
   1. Minimum submissions before insight generation triggers (BA suggests: 3)
   2. Can submitters rate insights derived from their own submissions? (BA suggests: yes)
 
@@ -31,7 +31,7 @@ If AK has not answered the 2 open questions, Architect proceeds with BA's sugges
 
 ACTIVE_BRANCH: main (no feature branch yet — Session 1 foundation branch created when LLD is approved)
 FILES_MODIFIED: tasks/todo.md, tasks/ba-logic.md, tasks/next-action.md, .claude/settings.json, memory/MEMORY.md
-DECISIONS_MADE: GitHub repo created (https://github.com/ayuvinc/Project-Dig) | MCP servers fixed (full python3 path) | git identity configured | TASK-009/011/012/013 deferred to Session 3 | BA-007 moved to Future/Unconfirmed
-OPEN_QUESTIONS: 2 BA open questions above | BA-007 AI Submission Layer (Session 4+)
+DECISIONS_MADE: GitHub repo created (https://github.com/ayuvinc/Project-Dig) | MCP servers fixed (full python3 path) | git identity configured | TASK-009/011/012/013 deferred | BA-007 moved to Future/Unconfirmed | Session 3 was a test-only session (MCP server test — did not work; .mcp.json has known issues: python3 path not full path, AUDIT_LOG_PATH points to wrong location)
+OPEN_QUESTIONS: 2 BA open questions above | BA-007 AI Submission Layer (Session 4+) | .mcp.json needs fix: use full python3 path, set AUDIT_LOG_PATH=releases/audit-log.md
 TEST_RESULTS: npm run build ✓ | npm run lint ✓ | npm run test --passWithNoTests ✓ (as of Session 1)
 NEXT_PERSONA: Architect
