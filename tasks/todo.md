@@ -11,25 +11,6 @@ Last updated:   2026-04-22
 
 ## Active Tasks
 
-### TASK-001 — Initialize git repository
-## Objective
-Run `git init`, create `.gitignore`, and make the first commit. All subsequent work depends on git being present.
-## Scope
-- `git init` in project root
-- Verify existing `.gitignore` covers env files, node_modules, .next
-- `git add` tracked files and make initial commit
-## Acceptance Criteria
-- `git status` works from project root
-- `.gitignore` correctly excludes `.env.local`, `node_modules/`, `.next/`
-- First commit exists on `main`
-## Security Notes
-- `.env.local` must NOT be committed — verify .gitignore before committing
-## Dependencies
-- None
-## Status
-PENDING
-
----
 
 ### TASK-002 — Scaffold Next.js application
 ## Objective
@@ -260,4 +241,8 @@ PENDING (blocked on UX/Designer running first)
 
 ## Archive
 
-<!-- Completed tasks moved here by Architect at sprint close -->
+### TASK-001 — Initialize git repository — DONE 2026-04-22
+- `git init` on main, 121 files committed
+- `.gitignore` updated: added `node_modules/`, `.next/`, `.DS_Store`, `tasks/.session-transition-lock`
+- First commit: `902310d`
+- Note: git user.name/user.email used hostname defaults — AK should run `git config --global user.name` / `git config --global user.email`
