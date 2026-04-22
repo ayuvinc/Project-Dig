@@ -1,7 +1,7 @@
 ---
-Status: draft
-Source: (user-confirmed | ai-inferred | code-observed | mixed)
-Last confirmed with user: YYYY-MM-DD
+Status: confirmed
+Source: user-confirmed
+Last confirmed with user: 2026-04-22
 Owner: Product
 Open questions: 0
 ---
@@ -10,24 +10,27 @@ Open questions: 0
 
 ## Primary User
 
-Who is the main person using this product? What is their role, context, and technical level?
+Knowledge workers of all types — corporate researchers tracking fast-moving domains, independent analysts building knowledge bases, academics aggregating research, and generalist professionals who read widely and need to find signal fast. All share one trait: they consume large volumes of information and need to extract useful, structured knowledge from it.
 
 ## User Pain / Problem
 
-What specific problem does the user face today? Be concrete — not "they need a better tool" but "they spend 3 hours per week manually copying data between spreadsheets."
+The internet has the answers — but they're buried in Reddit threads, Twitter/X debates, Hacker News comments, and forum noise. Community knowledge exists, but it's scattered, unstructured, and requires hours of scrolling to extract a single useful insight. Users either spend too much time filtering noise, or they miss the signal entirely.
 
 ## Current Workaround
 
-How does the user solve this problem today without this product?
+Users manually bookmark links in Notion or browser folders, subscribe to newsletters, lurk in Reddit communities, and follow domain experts on Twitter — then do their own synthesis. There is no single place where community knowledge is submitted, processed, and returned as structured, searchable insights.
 
 ## Why Current State Fails
 
-Why is the current workaround insufficient? What breaks, what's slow, what's risky?
+Manual curation doesn't scale. Community signal exists on Reddit and Twitter, but the format is noise-first — opinions, arguments, memes, and low-quality takes vastly outnumber genuine insights. There's no mechanism to aggregate community knowledge and surface the signal without the scroll.
 
 ## Success Outcome
 
-What does the world look like when this product works? One measurable outcome.
+A knowledge worker can come to Project-Dig, search a topic or browse by tag, and find structured AI-derived insights sourced from the community — in under 2 minutes, without scrolling through noise. 100 active contributors in 30 days. 70% of rated insights marked "useful."
 
 ## Non-Goals
 
-What this product explicitly does NOT try to solve. List items that are adjacent but excluded.
+- Not a social network — no following, DMs, or social graph
+- Not a search engine — does not crawl the web, only indexes what users submit
+- Not a content creation platform — users submit pointers to knowledge, not publish original long-form content
+- Not a replacement for Reddit or Twitter — it is a signal extraction layer on top of community knowledge
