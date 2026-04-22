@@ -108,3 +108,28 @@ artifacts_written:
 warnings:
   - "Session 2 has no audit entries — session-open/close for Session 2 may not have run cleanly"
 notes:           "Session 3 open. Active persona: Architect. Active task: TASK-010 (write LLD for Session 1 Foundation). 1 PENDING task. 0 OPEN risks. 0 lessons recorded."
+
+---
+entry_id:        audit-3-1-20260422T000001Z
+timestamp_utc:   2026-04-22T00:00:01Z
+session_id:      3
+sprint_id:       1
+agent:           session-close
+actor:           session-close
+event_type:      SESSION_CLOSED
+action:          "Session 3 closed — test-only, no tasks completed; MCP server test was attempted but did not work"
+status:          PASS
+artifact_links:
+  - tasks/todo.md
+  - tasks/next-action.md
+  - channel.md
+  - .mcp.json
+artifacts_written:
+  - tasks/todo.md
+  - tasks/next-action.md
+  - channel.md
+warnings:
+  - "ba-logic.md entries are CONFIRMED not INCORPORATED — expected; INCORPORATED after LLD written in Session 4"
+  - ".mcp.json has two issues: python3 not full path (see prior Session 2 fix), AUDIT_LOG_PATH=tasks/audit-log.md should be releases/audit-log.md"
+  - "Session 3 was a test-only session opened and closed immediately — no implementation work done"
+notes:           "TASK-010 remains PENDING. Next: Session 4, Architect writes docs/lld/session-1-foundation.md. .mcp.json committed for reference but needs fixes before MCP servers will work."
