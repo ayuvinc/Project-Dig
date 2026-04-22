@@ -64,7 +64,7 @@
 <!-- Anything the next session's persona needs that doesn't fit in next-action.md -->
 <!-- Architect clears and rewrites this section at each session close -->
 
-No active context.
+- [feedback_discovery_interview.md](feedback_discovery_interview.md) — BA must ask one question at a time with options + recommendation
 
 ---
 
